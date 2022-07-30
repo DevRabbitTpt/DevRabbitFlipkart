@@ -13,10 +13,11 @@ public class GitHub {
 	WebDriver driver;
 
 	@Test
-	public void f() throws Exception{
-		driver.findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
-		driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input")).sendKeys("pendrive",Keys.ENTER);
-		Actions act=new Actions(driver);
+	public void flipkart() throws Exception{
+		System.out.println("Hello");
+	//	driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']")).click();
+	//	driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input")).sendKeys("pendrive",Keys.ENTER);
+		
 		Thread.sleep(2000);
 	}
 
@@ -32,7 +33,7 @@ public class GitHub {
 
 	@AfterTest
 	public void afterTest() {
-		driver.close();
+	//	driver.close();
 	}
 
 }
