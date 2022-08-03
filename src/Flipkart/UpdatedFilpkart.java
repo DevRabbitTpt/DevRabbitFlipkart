@@ -39,6 +39,7 @@ public class UpdatedFilpkart {
 		loggername.info("opened filpkart");
 //close
 		driver.findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
+		loggername.info("Loggin popup button closed");
 		Thread.sleep(1000);
 		//click on electronics
 		driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[2]/div/div/div[3]/a/div[2]")).click();

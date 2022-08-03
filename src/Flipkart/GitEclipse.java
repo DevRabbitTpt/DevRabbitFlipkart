@@ -6,7 +6,7 @@ import org.testng.annotations.AfterTest;
 
 public class GitEclipse {
   @Test
-  public void f() {
+  public void giteclipsemethod() {
   }
   @BeforeTest
   public void beforeTest() {
