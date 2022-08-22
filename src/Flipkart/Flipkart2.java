@@ -7,8 +7,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-
 
 public class Flipkart2 {
 				
@@ -21,7 +19,7 @@ public class Flipkart2 {
 		
 		driver.findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
 		driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input")).sendKeys("pendrive",Keys.ENTER);
-		Actions act=new Actions(driver);
+		//Actions act=new Actions(driver);
 		Thread.sleep(2000);
 	//driver.findElement(By.xpath("//span[text()='Electronics']")).click();
 	//WebElement z1=driver.findElement(By.xpath("//a[@title='pendrive']"));
@@ -61,6 +59,7 @@ public class Flipkart2 {
 		{
 			System.out.println(lists.get(i).getText() + "---" + list.get(i).getText());
 		}*/
+	driver.close();
 	}
 	
 			

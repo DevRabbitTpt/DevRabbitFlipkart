@@ -2,22 +2,14 @@ package Flipkart;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.Test;
-
 
 public class Filpkart1 {
 	
@@ -99,7 +91,7 @@ public static void main(String args[]) throws InterruptedException, IOException
 		  File src1=sd.getScreenshotAs(OutputType.FILE);
 		  File trg1=new File(".\\Screenshots\\pendrive.jpg");
 		  FileUtils.copyFile(src1, trg1);
-		
+		driver.close();
 	}
 
 
